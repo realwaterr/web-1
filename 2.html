@@ -1,26 +1,46 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - CSS</title>
+  <title>WEB1-HTML</title>
   <meta charest="utf-8">
+  <style media="screen">
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align:center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    body{
+       margin:0;
+    }
+    h2, p{
+      border-left:1px solid gray;
+    }
+   .saw {
+      color:gray;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <ol>
-    <li><a href="1.html">HTML</a></li>
+    <li><a href="1.html" class="saw">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
+    <li><a href="3.html" class="saw">JavaScript</a></li>
   </ol>
   <h2>CSS이란 무엇인가?</h2>
-  <p><a href="https://www.w3.org/TR/html52/" target="_blank" title="html5 sepecification">Hypertext Markup Language (HTML)</a>
-  is the standard markup language for
-  <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents
-  from a web server or from local storage and render them into
-  multimedia web pages. HTML describes the structure of a web page semantically and originally
-  included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML
-  elements are the building blocks of HTML pages. With HTML constructs, images and other
-  objects, such as interactive forms, may be embedded into the rendered page. It provides a means
-  to create structured documents by denoting structural semantics for text such as headings, paragraphs,
-  lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+  <p>HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 언어.</p>
+  <p>CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.</p>
 </body>
 </html>
