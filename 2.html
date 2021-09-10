@@ -1,23 +1,63 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1-CSS</title>
-  <meta charest="utf-8">
-  <link rel="stylesheet" href="style.css">
+    <title>WEB1-CSS</title>
+    <meta charest="utf-8">
+    <style media="screen">
+        h1 {
+          font-size: 45px;
+          text-align:center;
+          border-bottom:1px solid gray;
+          margin:0;
+          padding:20px;
+          padding-top: 0px;
+        }
+        ol{
+          border-right:1px solid gray;
+          width:100px;
+          margin:0;
+          padding:20px;
+        }
+        #grid ol{
+          padding-left:39px;
+        }
+        body{
+           margin:0;
+        }
+        #article{
+          padding-left:25px;
+        }
+        #grid{
+          display:grid;
+          grid-template-columns: 150px 1fr;
+        }
+    </style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <div id="grid">
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <div id="article">
-      <h2>CSS이란 무엇인가?</h2>
-      <p>HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 언어.</p>
+    <input id="night_day" type="button" value="night" onclick="
+            var target =document.querySelector('body');
+            if (document.querySelector('#night_day').value==='night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#night_day').value = 'day';
+            } else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#night_day').value = 'night';
+            }
+    ">
+    <h1><a href="index.html">곽하늘 사랑해</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>CSS이란 무엇인가?</h2>
+            <p>HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 언어.</p>
       <p>CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.</p>
+        </div>
     </div>
-  </div>
 </body>
 </html>
