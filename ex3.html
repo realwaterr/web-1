@@ -4,31 +4,36 @@
     <title>WEB1-JAvaScript</title>
     <meta charest="utf-8">
     <script>
+        function BodysetColor(color){
+            document.querySelector('body').style.backgroundColor=color;
+        }
+            var target = document.querySelector('body');
+        function LettersetColor(color){
+            document.querySelector('body').style.color=color;
+        }
+        function setColor(color) {
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = color;
+                i++;
+            }   
+        }
         function nightDayhandler(self){
             var target = document.querySelector('body');
             if (self.value==='night'){
-                target.style.backgroundColor='black';
-                target.style.color='white';
+                Body.setColor('black');
+                Letter.setColor('white');
 
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length){
-                    alist[i].style.color = 'powderblue';
-                    i++;
-                }
+                setColor('powderblue');
                 self.value = 'day';
 
 
             } else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
+                Body.setColor('white');
+                Letter.setColor('black');
 
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length){
-                    alist[i].style.color = 'blue';
-                    i++;
-                }
+                setColor('blue');
                 self.value = 'night';
             }
         }
@@ -67,34 +72,6 @@
     <input id = "nightday" type="button" value="night" onclick = "
         nightDayhandler(this);
     ">
-    <!-- <input type="button" value="night" onclick="
-            var target =document.querySelector('body');
-            if (this.value==='night'){
-                target.style.backgroundColor='black';
-                target.style.color='white';
-
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length){
-                    alist[i].style.color = 'powderblue';
-                    i++;
-                }
-                this.value = 'day';
-
-
-            } else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
-
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length){
-                    alist[i].style.color = 'blue';
-                    i++;
-                }
-                this.value = 'night';
-            }
-    "> -->
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
         <ol>
