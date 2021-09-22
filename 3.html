@@ -3,48 +3,13 @@
 <head>
     <title>WEB1-JAvaScript</title>
     <meta charest="utf-8">
-    <style media="screen">
-        h1 {
-          font-size: 45px;
-          text-align:center;
-          border-bottom:1px solid gray;
-          margin:0;
-          padding:20px;
-          padding-top: 0px;
-        }
-        ol{
-          border-right:1px solid gray;
-          width:100px;
-          margin:0;
-          padding:20px;
-        }
-        #grid ol{
-          padding-left:39px;
-        }
-        body{
-           margin:0;
-        }
-        #article{
-          padding-left:25px;
-        }
-        #grid{
-          display:grid;
-          grid-template-columns: 150px 1fr;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <input id="night_day" type="button" value="night" onclick="
-            var target =document.querySelector('body');
-            if (document.querySelector('#night_day').value==='night'){
-                target.style.backgroundColor='black';
-                target.style.color='white';
-                document.querySelector('#night_day').value = 'day';
-            } else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
-                document.querySelector('#night_day').value = 'night';
-            }
+    <input id = "nightday" type="button" value="night" onclick = "
+        nightDayhandler(this);
     ">
     <h1><a href="index.html">곽하늘 사랑해</a></h1>
     <div id="grid">
